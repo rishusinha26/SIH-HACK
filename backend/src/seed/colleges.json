@@ -1,0 +1,32 @@
+[
+  {
+    "name": "City Institute of Technology",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "location": { "lat": 12.9716, "lng": 77.5946 },
+    "streams": ["Science", "Engineering"],
+    "courses": ["B.Tech Computer Science", "B.Tech Mechanical"],
+    "website": "https://example.edu/cit"
+  },
+  {
+    "name": "National College of Arts",
+    "city": "Delhi",
+    "state": "Delhi",
+    "location": { "lat": 28.6139, "lng": 77.2090 },
+    "streams": ["Arts", "Design"],
+    "courses": ["B.Des Communication Design", "BFA"],
+    "website": "https://example.edu/nca"
+  },
+  {
+    "name": "Commerce & Finance University",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "location": { "lat": 19.0760, "lng": 72.8777 },
+    "streams": ["Commerce", "Management"],
+    "courses": ["B.Com Accounting", "BMS"],
+    "website": "https://example.edu/cfu"
+  }
+]
+
+
+

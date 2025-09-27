@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Software Engineer",
+    "stream": "Science",
+    "description": "Build software systems and applications.",
+    "tags": ["coding", "technology"],
+    "requiredSkills": ["logical", "quantitative"],
+    "recommendedIf": { "logicalGte": 60, "quantitativeGte": 50 }
+  },
+  {
+    "name": "Graphic Designer",
+    "stream": "Arts",
+    "description": "Create visual content.",
+    "tags": ["design", "creative"],
+    "requiredSkills": ["creative"],
+    "recommendedIf": { "creativeGte": 60 }
+  },
+  {
+    "name": "Chartered Accountant",
+    "stream": "Commerce",
+    "description": "Manage financial audits and taxation.",
+    "tags": ["finance", "numbers"],
+    "requiredSkills": ["quantitative"],
+    "recommendedIf": { "quantitativeGte": 65 }
+  }
+]
+
+
+
