@@ -3,12 +3,28 @@ import User from '../models/User.js';
 import { mapScoresToStreams } from '../utils/recommendation.js';
 
 export async function submitQuiz(req, res) {
-  const { scores } = req.body;
-  if (!scores) return res.status(400).json({ message: 'Scores required' });
-  const recommendedStreams = mapScoresToStreams(scores);
-  const result = await QuizResult.create({ user: req.user.id, scores, recommendedStreams });
-  await User.findByIdAndUpdate(req.user.id, { $set: { 'recommendations.streams': recommendedStreams } });
-  res.json({ result });
+  try {
+    const { scores, recommendedStreams, answers } = req.body;
+    if (!scores) return res.status(400).json({ message: 'Scores required' });
+    
+    const finalRecommendedStreams = recommendedStreams || mapScoresToStreams(scores);
+    const result = await QuizResult.create({ 
+      user: req.user.id, 
+      scores, 
+      recommendedStreams: finalRecommendedStreams,
+      answersCount: answers || 0,
+      submittedAt: new Date()
+    });
+    
+    await User.findByIdAndUpdate(req.user.id, { 
+      $set: { 'recommendations.streams': finalRecommendedStreams } 
+    });
+    
+    res.json({ result });
+  } catch (error) {
+    console.error('Quiz submission error:', error);
+    res.status(500).json({ message: 'Failed to submit quiz' });
+  }
 }
 
 export async function getMyQuiz(req, res) {

@@ -11,6 +11,8 @@ const quizResultSchema = new mongoose.Schema(
       social: { type: Number, default: 0 },
     },
     recommendedStreams: [{ type: String }],
+    answersCount: { type: Number, default: 0 },
+    submittedAt: { type: Date, default: Date.now }
   },
   { timestamps: true }
 );

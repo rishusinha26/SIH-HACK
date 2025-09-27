@@ -29,6 +29,15 @@ export default function Dashboard() {
           nearbyColleges: colleges.data.colleges?.length || 0,
           upcomingDeadlines: timeline.data.items?.length || 0
         })
+      } catch (error) {
+        console.error('Failed to load dashboard:', error)
+        // Set default stats on error
+        setStats({
+          quizCompleted: false,
+          recommendedStreams: [],
+          nearbyColleges: 0,
+          upcomingDeadlines: 0
+        })
       } finally {
         setLoading(false)
       }
@@ -92,7 +101,7 @@ export default function Dashboard() {
             <div className="text-4xl mb-3">🏫</div>
             <h3 className="text-xl font-semibold text-white mb-2">Nearby Colleges</h3>
             <p className="text-2xl font-bold text-green-400">{stats.nearbyColleges}</p>
-            <Link to="/colleges" className="inline-block mt-3 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-all duration-300 hover:scale-105">
+            <Link to="/college-directory" className="inline-block mt-3 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-all duration-300 hover:scale-105">
               Explore
             </Link>
           </div>
@@ -130,7 +139,7 @@ export default function Dashboard() {
                 </div>
               </Link>
               
-              <Link to="/colleges" className="flex items-center p-4 bg-purple-600/20 hover:bg-purple-600/30 rounded-xl transition-all duration-300 hover:scale-105 group">
+              <Link to="/college-directory" className="flex items-center p-4 bg-purple-600/20 hover:bg-purple-600/30 rounded-xl transition-all duration-300 hover:scale-105 group">
                 <div className="text-2xl mr-4">🏫</div>
                 <div>
                   <h3 className="text-lg font-semibold text-white group-hover:text-purple-300">Find Colleges</h3>
@@ -195,7 +204,7 @@ export default function Dashboard() {
                 </span>
               ))}
             </div>
-            <Link to="/careers" className="inline-block mt-6 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105">
+            <Link to="/career-recommendations" className="inline-block mt-6 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105">
               Explore Career Paths →
             </Link>
           </div>

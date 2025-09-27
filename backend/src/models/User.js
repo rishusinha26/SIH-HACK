@@ -47,6 +47,11 @@ const userSchema = new mongoose.Schema(
       careers: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Career' }],
       colleges: [{ type: mongoose.Schema.Types.ObjectId, ref: 'College' }],
     },
+    // Password reset fields
+    resetToken: { type: String },
+    resetTokenExpiry: { type: Date },
+    otp: { type: String },
+    otpExpiry: { type: Date },
   },
   { timestamps: true }
 );

@@ -1,0 +1,247 @@
+[
+  {
+    "id": 1,
+    "category": "logical reasoning",
+    "difficulty": "easy",
+    "question": "If A is taller than B, and B is taller than C, who is the shortest?",
+    "options": ["A", "B", "C", "Cannot be determined"],
+    "answer": "C",
+    "explanation": "If A > B and B > C, then A > B > C, so C is the shortest."
+  },
+  {
+    "id": 2,
+    "category": "logical reasoning",
+    "difficulty": "easy",
+    "question": "What comes next in the sequence: 2, 4, 8, 16, ?",
+    "options": ["24", "32", "20", "18"],
+    "answer": "32",
+    "explanation": "Each number is multiplied by 2: 2×2=4, 4×2=8, 8×2=16, 16×2=32"
+  },
+  {
+    "id": 3,
+    "category": "logical reasoning",
+    "difficulty": "medium",
+    "question": "If all roses are flowers and some flowers are red, which statement is definitely true?",
+    "options": [
+      "All roses are red",
+      "Some roses are red", 
+      "Some red things are roses",
+      "All red things are roses"
+    ],
+    "answer": "Some red things are roses",
+    "explanation": "Since all roses are flowers and some flowers are red, it follows that some red things are roses."
+  },
+  {
+    "id": 4,
+    "category": "logical reasoning",
+    "difficulty": "medium",
+    "question": "In a code, if CAT is written as 3120, how is DOG written?",
+    "options": ["4157", "4156", "4158", "4159"],
+    "answer": "4157",
+    "explanation": "C=3, A=1, T=20. So D=4, O=15, G=7, making DOG = 4157"
+  },
+  {
+    "id": 5,
+    "category": "logical reasoning",
+    "difficulty": "hard",
+    "question": "A clock shows 3:15. What is the angle between the hour and minute hands?",
+    "options": ["0°", "7.5°", "15°", "22.5°"],
+    "answer": "7.5°",
+    "explanation": "At 3:15, minute hand is at 3, hour hand is 1/4 of the way from 3 to 4. Each hour represents 30°, so 1/4 × 30° = 7.5°"
+  },
+  {
+    "id": 6,
+    "category": "social awareness",
+    "difficulty": "easy",
+    "question": "What is the primary purpose of the Right to Information Act (RTI) in India?",
+    "options": [
+      "To provide free education",
+      "To ensure transparency in government",
+      "To provide healthcare",
+      "To ensure employment"
+    ],
+    "answer": "To ensure transparency in government",
+    "explanation": "RTI Act 2005 enables citizens to access information from public authorities, promoting transparency and accountability."
+  },
+  {
+    "id": 7,
+    "category": "social awareness",
+    "difficulty": "easy",
+    "question": "Which of the following is a fundamental right in the Indian Constitution?",
+    "options": [
+      "Right to property",
+      "Right to education",
+      "Right to employment",
+      "Right to healthcare"
+    ],
+    "answer": "Right to education",
+    "explanation": "Right to Education (Article 21A) is a fundamental right ensuring free and compulsory education for children aged 6-14."
+  },
+  {
+    "id": 8,
+    "category": "social awareness",
+    "difficulty": "medium",
+    "question": "What does the term 'Digital Divide' refer to?",
+    "options": [
+      "Difference in internet speeds",
+      "Gap in access to digital technology",
+      "Different types of computers",
+      "Variation in software prices"
+    ],
+    "answer": "Gap in access to digital technology",
+    "explanation": "Digital divide refers to the gap between those who have access to digital technology and those who don't."
+  },
+  {
+    "id": 9,
+    "category": "social awareness",
+    "difficulty": "medium",
+    "question": "Which government scheme aims to provide financial inclusion to the unbanked?",
+    "options": [
+      "PM-KISAN",
+      "Jan Dhan Yojana",
+      "Ayushman Bharat",
+      "Swachh Bharat"
+    ],
+    "answer": "Jan Dhan Yojana",
+    "explanation": "Pradhan Mantri Jan Dhan Yojana (PMJDY) aims to provide banking services to all households."
+  },
+  {
+    "id": 10,
+    "category": "social awareness",
+    "difficulty": "hard",
+    "question": "What is the significance of Article 370 in the Indian Constitution?",
+    "options": [
+      "Special status for Jammu and Kashmir",
+      "Reservation for minorities",
+      "Right to property",
+      "Freedom of speech"
+    ],
+    "answer": "Special status for Jammu and Kashmir",
+    "explanation": "Article 370 provided special autonomous status to Jammu and Kashmir, which was abrogated in 2019."
+  },
+  {
+    "id": 11,
+    "category": "vocabulary",
+    "difficulty": "easy",
+    "question": "What does 'ubiquitous' mean?",
+    "options": [
+      "Very large",
+      "Present everywhere",
+      "Very expensive",
+      "Very old"
+    ],
+    "answer": "Present everywhere",
+    "explanation": "Ubiquitous means present, appearing, or found everywhere."
+  },
+  {
+    "id": 12,
+    "category": "vocabulary",
+    "difficulty": "easy",
+    "question": "Choose the correct synonym for 'meticulous':",
+    "options": [
+      "Careless",
+      "Careful and precise",
+      "Quick",
+      "Lazy"
+    ],
+    "answer": "Careful and precise",
+    "explanation": "Meticulous means showing great attention to detail; very careful and precise."
+  },
+  {
+    "id": 13,
+    "category": "vocabulary",
+    "difficulty": "medium",
+    "question": "What does 'ephemeral' mean?",
+    "options": [
+      "Lasting forever",
+      "Lasting for a very short time",
+      "Very bright",
+      "Very dark"
+    ],
+    "answer": "Lasting for a very short time",
+    "explanation": "Ephemeral means lasting for a very short time; transient."
+  },
+  {
+    "id": 14,
+    "category": "vocabulary",
+    "difficulty": "medium",
+    "question": "Choose the antonym for 'benevolent':",
+    "options": [
+      "Kind",
+      "Generous",
+      "Malevolent",
+      "Helpful"
+    ],
+    "answer": "Malevolent",
+    "explanation": "Benevolent means well-meaning and kindly, so its antonym is malevolent (having or showing a wish to do evil)."
+  },
+  {
+    "id": 15,
+    "category": "vocabulary",
+    "difficulty": "hard",
+    "question": "What does 'perspicacious' mean?",
+    "options": [
+      "Having a ready insight into things",
+      "Being very slow",
+      "Being very loud",
+      "Being very quiet"
+    ],
+    "answer": "Having a ready insight into things",
+    "explanation": "Perspicacious means having a ready insight into and understanding of things; shrewd."
+  },
+  {
+    "id": 16,
+    "category": "logical reasoning",
+    "difficulty": "easy",
+    "question": "If today is Wednesday, what day will it be 100 days from now?",
+    "options": ["Thursday", "Friday", "Saturday", "Sunday"],
+    "answer": "Friday",
+    "explanation": "100 ÷ 7 = 14 weeks and 2 days. Wednesday + 2 days = Friday."
+  },
+  {
+    "id": 17,
+    "category": "logical reasoning",
+    "difficulty": "medium",
+    "question": "A cube is painted on all sides and cut into 27 smaller cubes. How many small cubes have exactly 2 painted faces?",
+    "options": ["8", "12", "6", "4"],
+    "answer": "12",
+    "explanation": "Cubes with exactly 2 painted faces are on the edges (excluding corners). A 3×3×3 cube has 12 edges."
+  },
+  {
+    "id": 18,
+    "category": "social awareness",
+    "difficulty": "easy",
+    "question": "What is the full form of NITI Aayog?",
+    "options": [
+      "National Institute for Transforming India",
+      "National Information Technology Institute",
+      "National Institute of Technology and Innovation",
+      "National Institute for Technology Integration"
+    ],
+    "answer": "National Institute for Transforming India",
+    "explanation": "NITI Aayog (National Institution for Transforming India) is the policy think tank of the Government of India."
+  },
+  {
+    "id": 19,
+    "category": "vocabulary",
+    "difficulty": "hard",
+    "question": "What does 'quixotic' mean?",
+    "options": [
+      "Extremely practical",
+      "Extremely idealistic and unrealistic",
+      "Very fast",
+      "Very slow"
+    ],
+    "answer": "Extremely idealistic and unrealistic",
+    "explanation": "Quixotic means extremely idealistic; unrealistic and impractical, like Don Quixote."
+  },
+  {
+    "id": 20,
+    "category": "logical reasoning",
+    "difficulty": "hard",
+    "question": "In a group of 50 people, 30 like tea, 25 like coffee, and 10 like both. How many like neither?",
+    "options": ["5", "10", "15", "20"],
+    "answer": "5",
+    "explanation": "Using set theory: Total = Tea + Coffee - Both + Neither. 50 = 30 + 25 - 10 + Neither. Neither = 5."
+  }
+]

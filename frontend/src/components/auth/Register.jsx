@@ -1,11 +1,15 @@
 import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import api from '../../api/client.js'
 import { useAuth } from '../../context/AuthContext.jsx'
+import { useToast } from '../ui/Toast.jsx'
 
 export default function Register() {
   const navigate = useNavigate()
   const { login } = useAuth()
+  const { t } = useTranslation()
+  const { addToast } = useToast()
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -14,6 +18,7 @@ export default function Register() {
   const [phone, setPhone] = useState('')
   const [error, setError] = useState(null)
   const [passwordError, setPasswordError] = useState('')
+  const [loading, setLoading] = useState(false)
 
   function validatePassword(pwd) {
     if (pwd.length < 8) return 'Password must be at least 8 characters long'
@@ -31,24 +36,38 @@ export default function Register() {
     e.preventDefault()
     setError(null)
     setPasswordError('')
+    setLoading(true)
+    
+    // Basic validation
+    if (!name || !email || !password) {
+      setError('Please fill in all required fields')
+      setLoading(false)
+      return
+    }
     
     if (!validateEmail(email)) {
       setError('Email must be a valid Gmail address (@gmail.com)')
+      setLoading(false)
       return
     }
     
     const pwdError = validatePassword(password)
     if (pwdError) {
       setPasswordError(pwdError)
+      setLoading(false)
       return
     }
     
     try {
       const { data } = await api.post('/auth/register', { name, email, password, gradeLevel, recoveryEmail, phone })
       login(data.token, data.user)
+      addToast('Registration successful!', 'success')
       navigate('/')
     } catch (err) {
       setError(err.response?.data?.message || 'Registration failed')
+      addToast('Registration failed', 'error')
+    } finally {
+      setLoading(false)
     }
   }
 

@@ -1,0 +1,425 @@
+[
+  {
+    "name": "Indian Institute of Technology Delhi",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "district": "New Delhi",
+    "pincode": "110016",
+    "location": { "lat": 28.5450, "lng": 77.1925 },
+    "streams": ["Science", "Engineering"],
+    "courses": [
+      { "name": "B.Tech Computer Science", "fee": 250000, "seats": 120 },
+      { "name": "B.Tech Mechanical", "fee": 200000, "seats": 100 },
+      { "name": "B.Tech Civil", "fee": 180000, "seats": 80 }
+    ],
+    "website": "https://home.iitd.ac.in",
+    "type": "Government",
+    "fees": {
+      "annual": 250000,
+      "currency": "INR",
+      "breakdown": {
+        "tuition": 200000,
+        "hostel": 30000,
+        "mess": 20000
+      }
+    },
+    "entranceExams": ["JEE Advanced", "JEE Main"],
+    "cutoff": "Top 0.1% in JEE Advanced",
+    "hostel": {
+      "available": true,
+      "capacity": 2000,
+      "facilities": ["WiFi", "Laundry", "Gym", "Library"]
+    }
+  },
+  {
+    "name": "Indian Institute of Science Bangalore",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "district": "Bangalore Urban",
+    "pincode": "560012",
+    "location": { "lat": 12.9716, "lng": 77.5946 },
+    "streams": ["Science", "Engineering"],
+    "courses": [
+      { "name": "B.Tech Computer Science", "fee": 200000, "seats": 80 },
+      { "name": "B.Tech Electrical", "fee": 180000, "seats": 60 },
+      { "name": "B.Sc Physics", "fee": 50000, "seats": 40 }
+    ],
+    "website": "https://iisc.ac.in",
+    "type": "Government",
+    "fees": {
+      "annual": 200000,
+      "currency": "INR",
+      "breakdown": {
+        "tuition": 150000,
+        "hostel": 25000,
+        "mess": 25000
+      }
+    },
+    "entranceExams": ["JEE Advanced", "KVPY", "IISc Entrance"],
+    "cutoff": "Top 0.2% in JEE Advanced",
+    "hostel": {
+      "available": true,
+      "capacity": 1500,
+      "facilities": ["WiFi", "Laundry", "Gym", "Library", "Sports"]
+    }
+  },
+  {
+    "name": "Delhi University",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "district": "New Delhi",
+    "pincode": "110007",
+    "location": { "lat": 28.6139, "lng": 77.2090 },
+    "streams": ["Science", "Commerce", "Arts"],
+    "courses": [
+      { "name": "B.Sc Computer Science", "fee": 15000, "seats": 200 },
+      { "name": "B.Com", "fee": 12000, "seats": 300 },
+      { "name": "B.A Economics", "fee": 10000, "seats": 150 }
+    ],
+    "website": "https://du.ac.in",
+    "type": "Government",
+    "fees": {
+      "annual": 15000,
+      "currency": "INR",
+      "breakdown": {
+        "tuition": 10000,
+        "hostel": 3000,
+        "mess": 2000
+      }
+    },
+    "entranceExams": ["CUET", "DUET"],
+    "cutoff": "90%+ in CUET",
+    "hostel": {
+      "available": true,
+      "capacity": 5000,
+      "facilities": ["WiFi", "Laundry", "Library", "Cafeteria"]
+    }
+  },
+  {
+    "name": "Jawaharlal Nehru University",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "district": "New Delhi",
+    "pincode": "110067",
+    "location": { "lat": 28.5450, "lng": 77.1670 },
+    "streams": ["Arts", "Social Sciences", "Science"],
+    "courses": [
+      { "name": "B.A Economics", "fee": 20000, "seats": 100 },
+      { "name": "B.A Political Science", "fee": 18000, "seats": 80 },
+      { "name": "B.Sc Mathematics", "fee": 22000, "seats": 60 }
+    ],
+    "website": "https://jnu.ac.in",
+    "type": "Government",
+    "fees": {
+      "annual": 20000,
+      "currency": "INR",
+      "breakdown": {
+        "tuition": 15000,
+        "hostel": 3000,
+        "mess": 2000
+      }
+    },
+    "entranceExams": ["JNUEE"],
+    "cutoff": "85%+ in JNUEE",
+    "hostel": {
+      "available": true,
+      "capacity": 3000,
+      "facilities": ["WiFi", "Laundry", "Library", "Sports"]
+    }
+  },
+  {
+    "name": "Indian Institute of Management Ahmedabad",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "pincode": "380015",
+    "location": { "lat": 23.0225, "lng": 72.5714 },
+    "streams": ["Management", "Commerce"],
+    "courses": [
+      { "name": "BBA", "fee": 300000, "seats": 60 },
+      { "name": "MBA", "fee": 2500000, "seats": 400 },
+      { "name": "PGDM", "fee": 2000000, "seats": 200 }
+    ],
+    "website": "https://iima.ac.in",
+    "type": "Government",
+    "fees": {
+      "annual": 300000,
+      "currency": "INR",
+      "breakdown": {
+        "tuition": 250000,
+        "hostel": 30000,
+        "mess": 20000
+      }
+    },
+    "entranceExams": ["CAT", "GMAT", "IIMA Entrance"],
+    "cutoff": "99%ile+ in CAT",
+    "hostel": {
+      "available": true,
+      "capacity": 800,
+      "facilities": ["WiFi", "Laundry", "Gym", "Library", "Cafeteria"]
+    }
+  },
+  {
+    "name": "All India Institute of Medical Sciences Delhi",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "district": "New Delhi",
+    "pincode": "110029",
+    "location": { "lat": 28.6139, "lng": 77.2090 },
+    "streams": ["Science", "Medical"],
+    "courses": [
+      { "name": "MBBS", "fee": 50000, "seats": 100 },
+      { "name": "B.Sc Nursing", "fee": 30000, "seats": 50 },
+      { "name": "B.Sc Medical Technology", "fee": 40000, "seats": 30 }
+    ],
+    "website": "https://aiims.edu",
+    "type": "Government",
+    "fees": {
+      "annual": 50000,
+      "currency": "INR",
+      "breakdown": {
+        "tuition": 30000,
+        "hostel": 15000,
+        "mess": 5000
+      }
+    },
+    "entranceExams": ["NEET", "AIIMS Entrance"],
+    "cutoff": "720+ in NEET",
+    "hostel": {
+      "available": true,
+      "capacity": 1000,
+      "facilities": ["WiFi", "Laundry", "Library", "Medical"]
+    }
+  },
+  {
+    "name": "Indian Statistical Institute Kolkata",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "district": "Kolkata",
+    "pincode": "700108",
+    "location": { "lat": 22.5726, "lng": 88.3639 },
+    "streams": ["Science", "Mathematics"],
+    "courses": [
+      { "name": "B.Stat", "fee": 120000, "seats": 40 },
+      { "name": "B.Math", "fee": 100000, "seats": 30 },
+      { "name": "B.Sc Statistics", "fee": 80000, "seats": 50 }
+    ],
+    "website": "https://isi.ac.in",
+    "type": "Government",
+    "fees": {
+      "annual": 120000,
+      "currency": "INR",
+      "breakdown": {
+        "tuition": 100000,
+        "hostel": 15000,
+        "mess": 5000
+      }
+    },
+    "entranceExams": ["ISI Entrance", "JEE Main"],
+    "cutoff": "95%+ in ISI Entrance",
+    "hostel": {
+      "available": true,
+      "capacity": 200,
+      "facilities": ["WiFi", "Laundry", "Library"]
+    }
+  },
+  {
+    "name": "University of Mumbai",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "pincode": "400032",
+    "location": { "lat": 19.0760, "lng": 72.8777 },
+    "streams": ["Science", "Commerce", "Arts", "Engineering"],
+    "courses": [
+      { "name": "B.Tech Computer Science", "fee": 80000, "seats": 120 },
+      { "name": "B.Sc Physics", "fee": 25000, "seats": 100 },
+      { "name": "B.Com", "fee": 20000, "seats": 200 },
+      { "name": "B.A English", "fee": 15000, "seats": 80 }
+    ],
+    "website": "https://mu.ac.in",
+    "type": "Government",
+    "fees": {
+      "annual": 80000,
+      "currency": "INR",
+      "breakdown": {
+        "tuition": 60000,
+        "hostel": 15000,
+        "mess": 5000
+      }
+    },
+    "entranceExams": ["MHT-CET", "JEE Main"],
+    "cutoff": "80%+ in MHT-CET",
+    "hostel": {
+      "available": true,
+      "capacity": 2000,
+      "facilities": ["WiFi", "Laundry", "Library", "Cafeteria"]
+    }
+  },
+  {
+    "name": "Anna University",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "pincode": "600025",
+    "location": { "lat": 13.0827, "lng": 80.2707 },
+    "streams": ["Engineering", "Science", "Technology"],
+    "courses": [
+      { "name": "B.Tech Computer Science", "fee": 100000, "seats": 200 },
+      { "name": "B.Tech Mechanical", "fee": 90000, "seats": 150 },
+      { "name": "B.Tech Civil", "fee": 85000, "seats": 120 },
+      { "name": "B.Sc Computer Science", "fee": 30000, "seats": 100 }
+    ],
+    "website": "https://annauniv.edu",
+    "type": "Government",
+    "fees": {
+      "annual": 100000,
+      "currency": "INR",
+      "breakdown": {
+        "tuition": 80000,
+        "hostel": 15000,
+        "mess": 5000
+      }
+    },
+    "entranceExams": ["TANCET", "JEE Main"],
+    "cutoff": "85%+ in TANCET",
+    "hostel": {
+      "available": true,
+      "capacity": 3000,
+      "facilities": ["WiFi", "Laundry", "Gym", "Library", "Sports"]
+    }
+  },
+  {
+    "name": "University of Kerala",
+    "city": "Thiruvananthapuram",
+    "state": "Kerala",
+    "district": "Thiruvananthapuram",
+    "pincode": "695034",
+    "location": { "lat": 8.5241, "lng": 76.9366 },
+    "streams": ["Science", "Arts", "Commerce", "Medical"],
+    "courses": [
+      { "name": "B.Sc Physics", "fee": 20000, "seats": 80 },
+      { "name": "B.A English", "fee": 15000, "seats": 60 },
+      { "name": "B.Com", "fee": 18000, "seats": 100 },
+      { "name": "B.Sc Nursing", "fee": 40000, "seats": 50 }
+    ],
+    "website": "https://keralauniversity.ac.in",
+    "type": "Government",
+    "fees": {
+      "annual": 20000,
+      "currency": "INR",
+      "breakdown": {
+        "tuition": 15000,
+        "hostel": 3000,
+        "mess": 2000
+      }
+    },
+    "entranceExams": ["KEAM", "NEET"],
+    "cutoff": "75%+ in KEAM",
+    "hostel": {
+      "available": true,
+      "capacity": 1500,
+      "facilities": ["WiFi", "Laundry", "Library", "Cafeteria"]
+    }
+  },
+  {
+    "name": "Punjab University",
+    "city": "Chandigarh",
+    "state": "Punjab",
+    "district": "Chandigarh",
+    "pincode": "160014",
+    "location": { "lat": 30.7333, "lng": 76.7794 },
+    "streams": ["Science", "Arts", "Commerce", "Engineering"],
+    "courses": [
+      { "name": "B.Tech Computer Science", "fee": 60000, "seats": 100 },
+      { "name": "B.Sc Physics", "fee": 25000, "seats": 80 },
+      { "name": "B.A History", "fee": 20000, "seats": 60 },
+      { "name": "B.Com", "fee": 22000, "seats": 120 }
+    ],
+    "website": "https://puchd.ac.in",
+    "type": "Government",
+    "fees": {
+      "annual": 60000,
+      "currency": "INR",
+      "breakdown": {
+        "tuition": 45000,
+        "hostel": 10000,
+        "mess": 5000
+      }
+    },
+    "entranceExams": ["PUCET", "JEE Main"],
+    "cutoff": "80%+ in PUCET",
+    "hostel": {
+      "available": true,
+      "capacity": 2000,
+      "facilities": ["WiFi", "Laundry", "Library", "Sports"]
+    }
+  },
+  {
+    "name": "University of Rajasthan",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "district": "Jaipur",
+    "pincode": "302004",
+    "location": { "lat": 26.9124, "lng": 75.7873 },
+    "streams": ["Science", "Arts", "Commerce", "Law"],
+    "courses": [
+      { "name": "B.Sc Mathematics", "fee": 30000, "seats": 100 },
+      { "name": "B.A Political Science", "fee": 25000, "seats": 80 },
+      { "name": "B.Com", "fee": 28000, "seats": 120 },
+      { "name": "LLB", "fee": 35000, "seats": 60 }
+    ],
+    "website": "https://uniraj.ac.in",
+    "type": "Government",
+    "fees": {
+      "annual": 30000,
+      "currency": "INR",
+      "breakdown": {
+        "tuition": 20000,
+        "hostel": 6000,
+        "mess": 4000
+      }
+    },
+    "entranceExams": ["RPET", "CLAT"],
+    "cutoff": "70%+ in RPET",
+    "hostel": {
+      "available": true,
+      "capacity": 1500,
+      "facilities": ["WiFi", "Laundry", "Library"]
+    }
+  },
+  {
+    "name": "University of Lucknow",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow",
+    "pincode": "226007",
+    "location": { "lat": 26.8467, "lng": 80.9462 },
+    "streams": ["Science", "Arts", "Commerce", "Medical"],
+    "courses": [
+      { "name": "B.Sc Chemistry", "fee": 25000, "seats": 80 },
+      { "name": "B.A Economics", "fee": 20000, "seats": 100 },
+      { "name": "B.Com", "fee": 22000, "seats": 120 },
+      { "name": "B.Sc Nursing", "fee": 40000, "seats": 40 }
+    ],
+    "website": "https://lkouniv.ac.in",
+    "type": "Government",
+    "fees": {
+      "annual": 25000,
+      "currency": "INR",
+      "breakdown": {
+        "tuition": 18000,
+        "hostel": 5000,
+        "mess": 2000
+      }
+    },
+    "entranceExams": ["UPSEE", "NEET"],
+    "cutoff": "75%+ in UPSEE",
+    "hostel": {
+      "available": true,
+      "capacity": 1800,
+      "facilities": ["WiFi", "Laundry", "Library", "Cafeteria"]
+    }
+  }
+]
+

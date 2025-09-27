@@ -15,13 +15,14 @@ async function run() {
   await connectDatabase(process.env.MONGO_URI);
   const careers = JSON.parse(fs.readFileSync(path.join(__dirname, 'careers.json'), 'utf-8'));
   const colleges = JSON.parse(fs.readFileSync(path.join(__dirname, 'colleges.json'), 'utf-8'));
+  const indianColleges = JSON.parse(fs.readFileSync(path.join(__dirname, 'indianColleges.json'), 'utf-8'));
 
   await Career.deleteMany({});
   await College.deleteMany({});
   await Notification.deleteMany({});
 
   await Career.insertMany(careers);
-  await College.insertMany(colleges);
+  await College.insertMany([...colleges, ...indianColleges]);
 
   await Notification.insertMany([
     { title: 'ABC University B.Tech Admissions', type: 'admission', deadline: new Date(Date.now() + 1000*60*60*24*30), stream: 'Science' },

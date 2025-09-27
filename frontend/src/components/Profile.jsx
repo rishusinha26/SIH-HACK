@@ -1,26 +1,56 @@
 import api from '../api/client.js'
 import { useEffect, useState } from 'react'
+import { useToast } from './ui/Toast.jsx'
 
 export default function Profile() {
+  const { addToast } = useToast()
   const [profile, setProfile] = useState(null)
   const [editing, setEditing] = useState(false)
   const [form, setForm] = useState({ name: '', gradeLevel: '', location: { city: '', state: '' }, recoveryEmail: '', phone: '' })
   const [saving, setSaving] = useState(false)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    api.get('/auth/me').then(({data}) => {
-      setProfile(data.user)
-      setForm({
-        name: data.user?.name || '',
-        gradeLevel: data.user?.gradeLevel || '',
-        location: { city: data.user?.location?.city || '', state: data.user?.location?.state || '' },
-        recoveryEmail: data.user?.recoveryEmail || '',
-        phone: data.user?.phone || ''
-      })
-    })
-  }, [])
+    const loadProfile = async () => {
+      try {
+        setLoading(true)
+        const { data } = await api.get('/auth/me')
+        setProfile(data.user)
+        setForm({
+          name: data.user?.name || '',
+          gradeLevel: data.user?.gradeLevel || '',
+          location: { city: data.user?.location?.city || '', state: data.user?.location?.state || '' },
+          recoveryEmail: data.user?.recoveryEmail || '',
+          phone: data.user?.phone || ''
+        })
+      } catch (error) {
+        console.error('Failed to load profile:', error)
+        addToast('Failed to load profile', 'error')
+      } finally {
+        setLoading(false)
+      }
+    }
+    loadProfile()
+  }, [addToast])
 
-  if (!profile) return <div className="bg-white p-6 rounded shadow">Loading...</div>
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+      </div>
+    )
+  }
+
+  if (!profile) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Profile Not Found</h2>
+          <p className="text-gray-600 dark:text-gray-400">Unable to load your profile information.</p>
+        </div>
+      </div>
+    )
+  }
   return (
     <div className="bg-white p-6 rounded shadow">
       <div className="flex items-center justify-between">
@@ -39,11 +69,19 @@ export default function Profile() {
       )}
       {editing && (
         <form className="space-y-3" onSubmit={async (e)=>{
-          e.preventDefault(); setSaving(true)
+          e.preventDefault(); 
+          setSaving(true)
           try {
             const { data } = await api.put('/auth/me', form)
-            setProfile(data.user); setEditing(false)
-          } finally { setSaving(false) }
+            setProfile(data.user); 
+            setEditing(false)
+            addToast('Profile updated successfully!', 'success')
+          } catch (err) {
+            console.error('Failed to save profile:', err)
+            addToast('Failed to update profile', 'error')
+          } finally { 
+            setSaving(false) 
+          }
         }}>
           <div>
             <label className="text-sm text-slate-600">Name</label>
