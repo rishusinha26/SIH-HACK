@@ -1,30 +1,171 @@
 [
   {
-    "name": "City Institute of Technology",
-    "city": "Bengaluru",
+    "name": "Indian Institute of Technology Delhi",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "location": { "lat": 28.5450, "lng": 77.1925 },
+    "streams": ["Science", "Engineering"],
+    "courses": ["B.Tech Computer Science", "B.Tech Mechanical", "B.Tech Civil"],
+    "website": "https://home.iitd.ac.in",
+    "type": "Government",
+    "fees": {
+      "annual": 250000,
+      "currency": "INR",
+      "breakdown": {
+        "tuition": 200000,
+        "hostel": 30000,
+        "mess": 20000
+      }
+    },
+    "entranceExams": ["JEE Advanced", "JEE Main"],
+    "cutoff": "Top 0.1% in JEE Advanced"
+  },
+  {
+    "name": "Indian Institute of Science Bangalore",
+    "city": "Bangalore",
     "state": "Karnataka",
     "location": { "lat": 12.9716, "lng": 77.5946 },
     "streams": ["Science", "Engineering"],
-    "courses": ["B.Tech Computer Science", "B.Tech Mechanical"],
-    "website": "https://example.edu/cit"
+    "courses": ["B.Tech Computer Science", "B.Tech Electrical", "B.Sc Physics"],
+    "website": "https://iisc.ac.in",
+    "type": "Government",
+    "fees": {
+      "annual": 200000,
+      "currency": "INR",
+      "breakdown": {
+        "tuition": 150000,
+        "hostel": 25000,
+        "mess": 25000
+      }
+    },
+    "entranceExams": ["JEE Advanced", "KVPY", "IISc Entrance"],
+    "cutoff": "Top 0.2% in JEE Advanced"
   },
   {
-    "name": "National College of Arts",
-    "city": "Delhi",
+    "name": "Delhi University",
+    "city": "New Delhi",
     "state": "Delhi",
     "location": { "lat": 28.6139, "lng": 77.2090 },
-    "streams": ["Arts", "Design"],
-    "courses": ["B.Des Communication Design", "BFA"],
-    "website": "https://example.edu/nca"
+    "streams": ["Science", "Commerce", "Arts"],
+    "courses": ["B.Sc Computer Science", "B.Com", "B.A Economics"],
+    "website": "https://du.ac.in",
+    "type": "Government",
+    "fees": {
+      "annual": 15000,
+      "currency": "INR",
+      "breakdown": {
+        "tuition": 10000,
+        "hostel": 3000,
+        "mess": 2000
+      }
+    },
+    "entranceExams": ["CUET", "DUET"],
+    "cutoff": "90%+ in CUET"
   },
   {
-    "name": "Commerce & Finance University",
-    "city": "Mumbai",
-    "state": "Maharashtra",
-    "location": { "lat": 19.0760, "lng": 72.8777 },
-    "streams": ["Commerce", "Management"],
-    "courses": ["B.Com Accounting", "BMS"],
-    "website": "https://example.edu/cfu"
+    "name": "Jawaharlal Nehru University",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "location": { "lat": 28.5450, "lng": 77.1670 },
+    "streams": ["Arts", "Social Sciences", "Science"],
+    "courses": ["B.A Economics", "B.A Political Science", "B.Sc Mathematics"],
+    "website": "https://jnu.ac.in",
+    "type": "Government",
+    "fees": {
+      "annual": 20000,
+      "currency": "INR",
+      "breakdown": {
+        "tuition": 15000,
+        "hostel": 3000,
+        "mess": 2000
+      }
+    },
+    "entranceExams": ["JNUEE"],
+    "cutoff": "85%+ in JNUEE"
+  },
+  {
+    "name": "Indian Institute of Management Ahmedabad",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "location": { "lat": 23.0225, "lng": 72.5714 },
+    "streams": ["Management", "Commerce"],
+    "courses": ["BBA", "MBA", "PGDM"],
+    "website": "https://iima.ac.in",
+    "type": "Government",
+    "fees": {
+      "annual": 300000,
+      "currency": "INR",
+      "breakdown": {
+        "tuition": 250000,
+        "hostel": 30000,
+        "mess": 20000
+      }
+    },
+    "entranceExams": ["CAT", "GMAT", "IIMA Entrance"],
+    "cutoff": "99%ile+ in CAT"
+  },
+  {
+    "name": "National Institute of Design Ahmedabad",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "location": { "lat": 23.0225, "lng": 72.5714 },
+    "streams": ["Arts", "Design"],
+    "courses": ["B.Des Communication Design", "B.Des Product Design", "B.Des Fashion Design"],
+    "website": "https://nid.edu",
+    "type": "Government",
+    "fees": {
+      "annual": 180000,
+      "currency": "INR",
+      "breakdown": {
+        "tuition": 150000,
+        "hostel": 20000,
+        "mess": 10000
+      }
+    },
+    "entranceExams": ["NID DAT", "UCEED"],
+    "cutoff": "Top 5% in NID DAT"
+  },
+  {
+    "name": "All India Institute of Medical Sciences Delhi",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "location": { "lat": 28.6139, "lng": 77.2090 },
+    "streams": ["Science", "Medical"],
+    "courses": ["MBBS", "B.Sc Nursing", "B.Sc Medical Technology"],
+    "website": "https://aiims.edu",
+    "type": "Government",
+    "fees": {
+      "annual": 50000,
+      "currency": "INR",
+      "breakdown": {
+        "tuition": 30000,
+        "hostel": 15000,
+        "mess": 5000
+      }
+    },
+    "entranceExams": ["NEET", "AIIMS Entrance"],
+    "cutoff": "720+ in NEET"
+  },
+  {
+    "name": "Indian Statistical Institute Kolkata",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "location": { "lat": 22.5726, "lng": 88.3639 },
+    "streams": ["Science", "Mathematics"],
+    "courses": ["B.Stat", "B.Math", "B.Sc Statistics"],
+    "website": "https://isi.ac.in",
+    "type": "Government",
+    "fees": {
+      "annual": 120000,
+      "currency": "INR",
+      "breakdown": {
+        "tuition": 100000,
+        "hostel": 15000,
+        "mess": 5000
+      }
+    },
+    "entranceExams": ["ISI Entrance", "JEE Main"],
+    "cutoff": "95%+ in ISI Entrance"
   }
 ]
 
